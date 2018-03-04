@@ -3,16 +3,6 @@
 // All of these rules will be warnings so its a light nudge in the right direction
 module.exports = {
 	rules: {
-		'max-len': [
-			'warn',
-			{
-				code: 80,
-				ignoreComments: true,
-				ignoreUrls: true,
-				ignoreRegExpLiterals: true,
-			},
-		],
-
 		'comma-dangle': [
 			'warn',
 			{
@@ -24,6 +14,8 @@ module.exports = {
 			},
 		],
 
+		'import/no-useless-path-segments': 'warn',
+
 		// Arguably the most hotly debated rule. TODO: get this to truly fix spacing to tabs in projects
 		indent: [
 			'warn',
@@ -33,8 +25,6 @@ module.exports = {
 				VariableDeclarator: 2,
 			},
 		],
-
-		'import/no-useless-path-segments': 'warn',
 
 		'keyword-spacing': [
 			'warn',
@@ -49,6 +39,16 @@ module.exports = {
 			'always',
 			{
 				exceptAfterSingleLine: true,
+			},
+		],
+
+		'max-len': [
+			'warn',
+			{
+				code: 80,
+				ignoreComments: true,
+				ignoreUrls: true,
+				ignoreRegExpLiterals: true,
 			},
 		],
 
