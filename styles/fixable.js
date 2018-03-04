@@ -47,8 +47,8 @@ module.exports = {
 			{
 				code: 80,
 				ignoreComments: true,
-				ignoreUrls: true,
 				ignoreRegExpLiterals: true,
+				ignoreUrls: true,
 			},
 		],
 
@@ -58,9 +58,9 @@ module.exports = {
 			'warn',
 			'all',
 			{
+				ignoreJSX: 'multi-line',
 				nestedBinaryExpressions: false,
 				returnAssign: false,
-				ignoreJSX: 'multi-line',
 			},
 		],
 		'no-trailing-spaces': 'warn',
