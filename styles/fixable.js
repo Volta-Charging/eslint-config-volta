@@ -7,10 +7,10 @@ module.exports = {
 			'warn',
 			{
 				arrays: 'always-multiline',
-				objects: 'always-multiline',
-				imports: 'always-multiline',
 				exports: 'always-multiline',
 				functions: 'always-multiline',
+				imports: 'always-multiline',
+				objects: 'always-multiline',
 			},
 		],
 
@@ -29,8 +29,8 @@ module.exports = {
 		'keyword-spacing': [
 			'warn',
 			{
-				before: true,
 				after: true,
+				before: true,
 			},
 		],
 
