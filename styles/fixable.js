@@ -3,6 +3,15 @@
 // All of these rules will be warnings so its a light nudge in the right direction
 module.exports = {
   rules: {
+
+    'comma-dangle': ['warn', {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
+      functions: 'always-multiline',
+    }],
+
     // Arguably the most hotly debated rule. TODO: get this to truly fix spacing to tabs in projects
     indent: ["warn", "tab", {
           SwitchCase: "tab",
@@ -39,8 +48,6 @@ module.exports = {
     //Disallow Semicolons
     semi: ["warn", "never"],
     'space-in-parens': ['warn', 'never'],
-    'spaced-comment': 'warn',i
-
-
+    'spaced-comment': 'warn',
   }
 }
