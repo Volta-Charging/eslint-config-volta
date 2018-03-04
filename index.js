@@ -2,6 +2,9 @@
 
 module.exports = {
   extends: [
-    './styles/recommended',
+    'eslint:recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    './styles/recommended.js',
   ],
 }
