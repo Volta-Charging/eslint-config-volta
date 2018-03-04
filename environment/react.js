@@ -24,6 +24,7 @@ module.exports = {
 		'react/jsx-no-undef': 'error',
 
 		'react/no-array-index-key': 'warn',
+		'react/no-color-literals': 'warn',
 		'react/no-danger': 'warn',
 		'react/no-deprecated': 'warn',
 
