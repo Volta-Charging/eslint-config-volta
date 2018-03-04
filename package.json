@@ -13,7 +13,7 @@
     "eslint-plugin-react-native": "^3.2.1"
   },
   "devDependencies": {
-    "eslint": "^4.18.1",
+    "eslint": "^3.0.0",
     "pre-commit": "^1.2.0"
   },
   "keywords": [
@@ -27,6 +27,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "auto-update": "yarn upgrade",
     "lint": "eslint . --fix",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
