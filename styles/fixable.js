@@ -14,7 +14,8 @@ module.exports = {
 
     // Arguably the most hotly debated rule. TODO: get this to truly fix spacing to tabs in projects
     indent: ["warn", "tab", {
-          SwitchCase: "tab",
+      "SwitchCase": 1,
+      "VariableDeclarator": 2,
     }],
 
     'import/no-useless-path-segments': 'warn',
