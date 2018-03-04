@@ -34,7 +34,6 @@
   },
   "pre-commit": [
     "precommit-msg",
-    "auto-update",
     "lint"
   ]
 }

@@ -4,6 +4,7 @@ First add some packages to get precommit hooks working
 ```
 yarn add --dev pre-commit # TODO: this should be auto installed with this repo?
 
+# TODO: add this to npm
 yarn add --dev https://github.com/Volta-Charging/lint-config.git
 ```
 
@@ -12,7 +13,7 @@ Add to your `.eslintrc`:
 ```
 module.exports = {
   extends: [
-    'eslint-config-volta/environment/react', # whatever env you use
+    'eslint-config-volta/environment/react-native.js', # whatever env you use
     'eslint-config-volta', # the standard rules
   ],
 }
