@@ -2,6 +2,7 @@
 
 // coding style for React components.
 module.exports = {
+
 	env: {
 		browser: true,
 		es6: true,
@@ -23,9 +24,9 @@ module.exports = {
 		'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
 		'react/jsx-no-undef': 'error',
 
-		'react/no-array-index-key': 'warn',
+		'react/no-array-index-key': 'error',
 		'react/no-danger': 'warn',
-		'react/no-deprecated': 'warn',
+		'react/no-deprecated': 'error',
 
 		'react/no-did-mount-set-state': 'error',
 		'react/no-did-update-set-state': 'error',
@@ -42,7 +43,7 @@ module.exports = {
 				skipShapeProps: true,
 			},
 		],
-		'react/no-unused-state': ['warn'],
+		'react/no-unused-state': ['error'],
 		'react/no-will-update-set-state': 'error',
 
 		'react/prefer-es6-class': ['error', 'always'],
