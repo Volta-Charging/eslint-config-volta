@@ -63,6 +63,7 @@ module.exports = {
 				returnAssign: false,
 			},
 		],
+
 		'no-trailing-spaces': 'warn',
 
 		'one-var-declaration-per-line': 'warn',
