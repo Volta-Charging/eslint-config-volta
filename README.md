@@ -7,7 +7,6 @@ yarn add --dev pre-commit # TODO: this should be auto installed with this repo?
 yarn add --dev https://github.com/Volta-Charging/lint-config.git
 ```
 
-
 ## Step 2: extending eslint rules
 Add to your `.eslintrc`:
 ```
