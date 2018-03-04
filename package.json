@@ -26,7 +26,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "lint": "eslint src --fix",
+    "lint": "eslint . --fix",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "pre-commit": [ "precommit-msg", "lint" ]
