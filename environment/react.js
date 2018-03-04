@@ -16,9 +16,9 @@ module.exports = {
 		},
 	},
 
-  plugins: [
-    'react',
-  ],
+	plugins: [
+		'react',
+	],
 
 	rules: {
 		// Validate closing bracket location in JSX
