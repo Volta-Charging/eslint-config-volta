@@ -3,9 +3,15 @@
 module.exports = {
 	extends: [
 		'eslint:recommended',
+		'plugin:flowtype/recommended',
 		'plugin:import/errors',
 		'plugin:import/warnings',
 		'./fixable.js',
+	],
+	parser: 'babel-eslint',
+	plugins: [
+		'flowtype',
+		'import',
 	],
 	rules: {
 		'consistent-this': ['warn', 'self'],
