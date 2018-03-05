@@ -3,7 +3,7 @@
 Open up the project you wish to prettify and these packages:
 ```
 yarn add --dev pre-commit
-yarn add --dev https://github.com/Volta-Charging/lint-config.git
+yarn add --dev https://github.com/Volta-Charging/eslint-config-volta.git
 ```
 
 ## Step 2: extending eslint rules
