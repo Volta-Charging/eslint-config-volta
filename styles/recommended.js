@@ -2,7 +2,6 @@
 
 module.exports = {
 	extends: [
-		'eslint:recommended',
 		'plugin:flowtype/recommended',
 		'plugin:import/errors',
 		'plugin:import/warnings',
