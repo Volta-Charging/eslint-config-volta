@@ -17,6 +17,5 @@ module.exports = {
 		'linebreak-style': ['error', 'unix'],
 		'max-nested-callbacks': ['warn', 3],
 		'no-undef': 'off',
-		'operator-linebreak': ['error', 'before'],
 	},
 }

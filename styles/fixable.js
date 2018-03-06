@@ -21,8 +21,24 @@ module.exports = {
 			'warn',
 			'tab',
 			{
+				ArrayExpression: 1,
+				CallExpression: {
+					arguments: 1,
+				},
+				FunctionDeclaration: {body: 1, parameters: 2},
+				FunctionExpression: {
+					body: 1,
+					parameters: 2,
+				},
+				MemberExpression: 0,
 				SwitchCase: 1,
-				VariableDeclarator: 2,
+				VariableDeclarator: {
+					const: 3,
+					let: 2,
+					var: 2,
+				},
+				ignoredNodes: [],
+				outerIIFEBody: 1,
 			},
 		],
 

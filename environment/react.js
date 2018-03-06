@@ -2,7 +2,6 @@
 
 // coding style for React components.
 module.exports = {
-
 	env: {
 		browser: true,
 		es6: true,
@@ -19,12 +18,29 @@ module.exports = {
 	plugins: ['react'],
 
 	rules: {
+		'no-unused-vars': [
+			'warn',
+			{
+				varsIgnorePattern: 'React',
+			},
+		],
+
+		'operator-linebreak': [
+			'error',
+			'after',
+			{ overrides: {
+				':': 'ignore',
+				'?': 'ignore',
+			} },
+		],
+
 		// Validate closing bracket location in JSX
 		// This rule checks all JSX multiline elements and verifies the location of the closing bracket.
 		'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
 		'react/jsx-no-undef': 'error',
+		'react/jsx-uses-vars': 'warn',
 
-		'react/no-array-index-key': 'error',
+		'react/no-array-index-key': 'warn',
 		'react/no-danger': 'warn',
 		'react/no-deprecated': 'error',
 
@@ -43,7 +59,8 @@ module.exports = {
 				skipShapeProps: true,
 			},
 		],
-		'react/no-unused-state': ['error'],
+		'react/no-unused-state': 'warn',
+
 		'react/no-will-update-set-state': 'error',
 
 		'react/prefer-es6-class': ['error', 'always'],
