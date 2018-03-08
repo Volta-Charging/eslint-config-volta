@@ -58,16 +58,6 @@ module.exports = {
 			},
 		],
 
-		'max-len': [
-			'warn',
-			{
-				code: 80,
-				ignoreComments: true,
-				ignoreRegExpLiterals: true,
-				ignoreUrls: true,
-			},
-		],
-
 		// If a console.log is being used in code for good reason in production, it should be calling an api for warning or error reporting like Sentry or Dashbird
 		'no-console': 'warn',
 		'no-extra-parens': [
