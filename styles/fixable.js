@@ -79,6 +79,8 @@ module.exports = {
 			},
 		],
 
+		'no-multiple-empty-lines': ['warn', { max: 2, maxEOF: 1 }],
+
 		'no-trailing-spaces': 'warn',
 
 		'one-var-declaration-per-line': 'warn',
