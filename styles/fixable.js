@@ -16,7 +16,7 @@ module.exports = {
 
     'import/no-useless-path-segments': 'warn',
 
-    // Arguably the most hotly debated rule. TODO: get this to truly fix spacing to tabs in projects
+    // Arguably the most hotly debated rule
     indent: [
       'warn',
       2,
