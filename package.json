@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "eslint": "^4.18.2",
-    "pre-commit": "^1.2.2",
-    "yarn-upgrade-all": "^0.3.0"
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0"
   },
   "keywords": [
     "style guide",
@@ -29,12 +29,13 @@
   ],
   "license": "MIT",
   "scripts": {
-    "auto-update": "yarn-upgrade-all",
-    "lint": "eslint . --fix",
-    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+    "precommit": "lint-staged",
+    "lint": "eslint --fix --quiet"
   },
-  "pre-commit": [
-    "precommit-msg",
-    "lint"
-  ]
+  "lint-staged": {
+    "*.js": [
+      "yarn lint",
+      "git add"
+    ]
+  }
 }
