@@ -2,7 +2,7 @@
 ## Step 1: installing packages
 Open up the project you wish to prettify and these packages:
 ```
-yarn add --dev pre-commit
+yarn add --dev lint-staged husky
 yarn add --dev https://github.com/Volta-Charging/eslint-config-volta.git
 ```
 
@@ -20,14 +20,16 @@ module.exports = {
 Next get precommit hooks setup by adding the following to `package.json`:
 ```javascript
 {
-  "devDependencies": {
-    "pre-commit": "^1.2.0" // whatever is the latest version
-  },
   "scripts": {
-    "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
-    "lint": "eslint --fix --quiet src",
+    "precommit": "lint-staged",
+    "lint": "eslint --fix --quiet src"
   },
-  "pre-commit": [ "precommit-msg", "lint" ]
+  "lint-staged": {
+    "*.js": [
+      "yarn lint",
+      "git add"
+    ]
+  }
 }
 ```
 
