@@ -37,7 +37,6 @@ module.exports = {
 					let: 2,
 					var: 2,
 				},
-				ignoredNodes: [],
 				outerIIFEBody: 1,
 			},
 		],
