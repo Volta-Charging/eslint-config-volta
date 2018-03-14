@@ -1,6 +1,6 @@
 'use strict'
 
 module.exports = {
-	extends: ['./styles/recommended.js'],
-	plugins: ['import'],
+  extends: ['./styles/recommended.js'],
+  plugins: ['import'],
 }
