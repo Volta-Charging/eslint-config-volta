@@ -2,7 +2,7 @@
 ## Step 1: installing packages
 Open up the project you wish to prettify and these packages:
 ```
-yarn add --dev lint-staged husky
+yarn add --dev lint-staged husky eslint
 yarn add --dev https://github.com/Volta-Charging/eslint-config-volta.git
 ```
 
