@@ -13,6 +13,7 @@ module.exports = { // eslint-disable-line no-undef
         objects: 'always-multiline',
       },
     ],
+    'function-paren-newline': ['error', { minItems: 3 }],
 
     'import/no-useless-path-segments': 'warn',
 
@@ -41,6 +42,8 @@ module.exports = { // eslint-disable-line no-undef
       },
     ],
 
+    'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
+
     'no-extra-parens': [
       'warn',
       'all',
@@ -52,6 +55,8 @@ module.exports = { // eslint-disable-line no-undef
     ],
 
     'no-trailing-spaces': 'warn',
+
+    'object-property-newline': 'error',
 
     'one-var-declaration-per-line': 'warn',
 
