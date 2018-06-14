@@ -1,7 +1,8 @@
 'use strict'
 
 // coding style for React components.
-module.exports = {
+module.exports = { // eslint-disable-line no-undef
+
   env: {
     browser: true,
     es6: true,

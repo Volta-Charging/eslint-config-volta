@@ -1,7 +1,7 @@
 'use strict'
 
 // All of these rules will be warnings so its a light nudge in the right direction
-module.exports = {
+module.exports = { // eslint-disable-line no-undef
   rules: {
     'comma-dangle': [
       'warn',
@@ -13,6 +13,7 @@ module.exports = {
         objects: 'always-multiline',
       },
     ],
+    'function-paren-newline': ['error', { minItems: 3 }],
 
     'import/no-useless-path-segments': 'warn',
 
@@ -41,18 +42,8 @@ module.exports = {
       },
     ],
 
-    'max-len': [
-      'warn',
-      {
-        code: 80,
-        ignoreComments: true,
-        ignoreRegExpLiterals: true,
-        ignoreUrls: true,
-      },
-    ],
+    'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
 
-    // If a console.log is being used in code for good reason in production, it should be calling an api for warning or error reporting like Sentry or Dashbird
-    'no-console': 'warn',
     'no-extra-parens': [
       'warn',
       'all',
@@ -65,6 +56,8 @@ module.exports = {
 
     'no-trailing-spaces': 'warn',
 
+    'object-property-newline': 'error',
+
     'one-var-declaration-per-line': 'warn',
 
     'prefer-const': 'warn',
@@ -75,8 +68,6 @@ module.exports = {
 
     // Disallow Semicolons
     semi: ['warn', 'never'],
-
-    'sort-keys': 'warn',
 
     'space-in-parens': ['warn', 'never'],
     'spaced-comment': 'warn',

@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = {
+module.exports = { // eslint-disable-line no-undef
   extends: [
     'plugin:flowtype/recommended',
     'plugin:import/errors',
@@ -16,6 +16,8 @@ module.exports = {
     'consistent-this': ['warn', 'self'],
     'linebreak-style': ['error', 'unix'],
     'max-nested-callbacks': ['warn', 3],
-    'no-undef': 'off',
+    'no-console': 'warn', // If a console.log is being used in code for good reason in production, it should be calling an api for warning or error reporting like Sentry or Dashbird
+    'no-undef': 'error',
+    'sort-keys': 'warn',
   },
 }

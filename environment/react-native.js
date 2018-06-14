@@ -1,7 +1,7 @@
 'use strict'
 
 // coding style for React components.
-module.exports = {
+module.exports = { // eslint-disable-line no-undef
   env: {
     'react-native/react-native': true,
   },

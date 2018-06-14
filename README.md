@@ -22,7 +22,7 @@ Next get precommit hooks setup by adding the following to `package.json`:
 {
   "scripts": {
     "precommit": "lint-staged",
-    "lint": "eslint --fix --quiet src"
+    "lint": "eslint --fix src"
   },
   "lint-staged": {
     "*.js": [
