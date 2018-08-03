@@ -30,7 +30,7 @@
   "license": "MIT",
   "scripts": {
     "precommit": "lint-staged",
-    "lint": "eslint --fix ."
+    "lint": "eslint --fix --max-warnings 0 ."
   },
   "lint-staged": {
     "*.js": [
