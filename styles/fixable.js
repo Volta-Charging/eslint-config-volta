@@ -71,5 +71,7 @@ module.exports = { // eslint-disable-line no-undef
 
     'space-in-parens': ['warn', 'never'],
     'spaced-comment': 'warn',
+
+    'max-params': ['error', 3],
   },
 }
