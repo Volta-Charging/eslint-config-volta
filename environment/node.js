@@ -6,6 +6,6 @@ module.exports = { // eslint-disable-line no-undef
     node: true,
   },
   globals: {
-    Promise: true
+    Promise: true,
   },
 }

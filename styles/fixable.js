@@ -42,6 +42,8 @@ module.exports = { // eslint-disable-line no-undef
       },
     ],
 
+    'max-params': ['error', 3],
+
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
 
     'no-extra-parens': [
@@ -72,6 +74,5 @@ module.exports = { // eslint-disable-line no-undef
     'space-in-parens': ['warn', 'never'],
     'spaced-comment': 'warn',
 
-    'max-params': ['error', 3],
   },
 }
