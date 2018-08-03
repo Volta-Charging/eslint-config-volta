@@ -1,13 +1,10 @@
 'use strict'
-
 // coding style for React components.
 module.exports = { // eslint-disable-line no-undef
-
   env: {
     browser: true,
     es6: true,
   },
-
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -15,9 +12,7 @@ module.exports = { // eslint-disable-line no-undef
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-
   plugins: ['react'],
-
   rules: {
     'no-unused-vars': [
       'warn',
@@ -25,7 +20,6 @@ module.exports = { // eslint-disable-line no-undef
         varsIgnorePattern: 'React',
       },
     ],
-
     'operator-linebreak': [
       'error',
       'after',
@@ -34,23 +28,19 @@ module.exports = { // eslint-disable-line no-undef
         '?': 'ignore',
       } },
     ],
-
     // Validate closing bracket location in JSX
     // This rule checks all JSX multiline elements and verifies the location of the closing bracket.
     'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
     'react/jsx-no-undef': 'error',
     'react/jsx-uses-vars': 'warn',
-
     'react/no-array-index-key': 'warn',
     'react/no-danger': 'warn',
     'react/no-deprecated': 'error',
-
     'react/no-did-mount-set-state': 'error',
     'react/no-did-update-set-state': 'error',
     'react/no-direct-mutation-state': 'error',
     'react/no-redundant-should-component-update': 'warn',
     'react/no-render-return-value': 'error',
-
     'react/no-typos': 'warn',
     'react/no-unused-prop-types': [
       'error',
@@ -61,9 +51,7 @@ module.exports = { // eslint-disable-line no-undef
       },
     ],
     'react/no-unused-state': 'warn',
-
     'react/no-will-update-set-state': 'error',
-
     'react/prefer-es6-class': ['error', 'always'],
     'react/prefer-stateless-function': 'warn',
     'react/require-default-props': 'error',

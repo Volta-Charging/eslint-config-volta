@@ -1,5 +1,4 @@
 'use strict'
-
 // coding style for React components.
 module.exports = { // eslint-disable-line no-undef
   env: {
@@ -7,7 +6,6 @@ module.exports = { // eslint-disable-line no-undef
   },
   extends: ['./react.js', 'plugin:react-native/all'],
   plugins: ['react-native'],
-
   rules: {
     'react-native/no-inline-styles': 'off',
   },
