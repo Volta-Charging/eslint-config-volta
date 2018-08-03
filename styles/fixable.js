@@ -1,5 +1,4 @@
 'use strict'
-
 // All of these rules will be warnings so its a light nudge in the right direction
 module.exports = { // eslint-disable-line no-undef
   rules: {
@@ -13,15 +12,14 @@ module.exports = { // eslint-disable-line no-undef
         objects: 'always-multiline',
       },
     ],
+    'eol-last': ['error', 'always'],
     'function-paren-newline': ['error', { minItems: 3 }],
-
     'import/no-useless-path-segments': 'warn',
     'import/order': [
       'warn', {
         'newlines-between': 'always',
       },
     ],
-
     // Arguably the most hotly debated rule
     indent: [
       'warn',
@@ -30,7 +28,6 @@ module.exports = { // eslint-disable-line no-undef
         SwitchCase: 1,
       },
     ],
-
     'keyword-spacing': [
       'warn',
       {
@@ -38,7 +35,6 @@ module.exports = { // eslint-disable-line no-undef
         before: true,
       },
     ],
-
     'lines-between-class-members': [
       'warn',
       'always',
@@ -46,11 +42,8 @@ module.exports = { // eslint-disable-line no-undef
         exceptAfterSingleLine: true,
       },
     ],
-
     'max-params': ['error', 3],
-
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
-
     'no-extra-parens': [
       'warn',
       'all',
@@ -60,24 +53,21 @@ module.exports = { // eslint-disable-line no-undef
         returnAssign: false,
       },
     ],
-
+    'no-multiple-empty-lines': ['error', {
+      max: 1,
+      maxBOF: 0,
+      maxEOF: 1,
+    }],
     'no-trailing-spaces': 'warn',
-
     'object-property-newline': 'error',
-
     'one-var-declaration-per-line': 'warn',
-
     'prefer-const': 'warn',
     'prefer-numeric-literals': 'warn',
-
     'quote-props': ['warn', 'as-needed'],
     quotes: ['warn', 'single', 'avoid-escape'],
-
     // Disallow Semicolons
     semi: ['warn', 'never'],
-
     'space-in-parens': ['warn', 'never'],
     'spaced-comment': 'warn',
-
   },
 }
