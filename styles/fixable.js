@@ -16,6 +16,11 @@ module.exports = { // eslint-disable-line no-undef
     'function-paren-newline': ['error', { minItems: 3 }],
 
     'import/no-useless-path-segments': 'warn',
+    'import/order': [
+      'warn', {
+        'newlines-between': 'always',
+      },
+    ],
 
     // Arguably the most hotly debated rule
     indent: [
