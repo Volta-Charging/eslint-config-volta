@@ -15,6 +15,11 @@ module.exports = { // eslint-disable-line no-undef
     'eol-last': ['error', 'always'],
     'function-paren-newline': ['error', { minItems: 3 }],
     'import/no-useless-path-segments': 'warn',
+    'import/order': [
+      'warn', {
+        'newlines-between': 'always',
+      },
+    ],
     // Arguably the most hotly debated rule
     indent: [
       'warn',
@@ -37,9 +42,7 @@ module.exports = { // eslint-disable-line no-undef
         exceptAfterSingleLine: true,
       },
     ],
-
     'max-params': ['error', 3],
-
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
     'no-extra-parens': [
       'warn',
