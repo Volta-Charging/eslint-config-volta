@@ -4,6 +4,7 @@ module.exports = { // eslint-disable-line no-undef
   env: {
     browser: true,
     es6: true,
+    node: true,
   },
   parserOptions: {
     ecmaFeatures: {
