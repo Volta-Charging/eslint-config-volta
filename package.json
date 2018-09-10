@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-volta",
+  "name": "@volta/eslint-config-volta",
   "version": "0.0.1",
   "repository": {
     "type": "git",
