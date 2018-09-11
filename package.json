@@ -6,6 +6,7 @@
     "url": "https://github.com/Volta-Charging/lint-config.git"
   },
   "dependencies": {
+    "eslint": "^4.18.2",
     "babel-eslint": "^8.2.2",
     "eslint-plugin-flowtype": "^2.46.1",
     "eslint-plugin-import": "^2.9.0",
@@ -14,7 +15,6 @@
     "eslint-plugin-react-native": "^3.2.1"
   },
   "devDependencies": {
-    "eslint": "^4.18.2",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.0"
   },
