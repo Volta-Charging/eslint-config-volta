@@ -3,7 +3,7 @@
 Open up the project you wish to prettify and these packages:
 ```
 yarn add --dev lint-staged husky eslint
-yarn add --dev https://github.com/Volta-Charging/eslint-config-volta.git
+yarn add --dev @volta/eslint-config-volta
 ```
 
 ## Step 2: extending eslint rules
@@ -43,5 +43,12 @@ mv node_modules/eslint-config-volta/.vscode/ .vscode/
 TODO: automate copying this file on the package install
 ```
 cp node_modules/eslint-config-volta/.editorconfig .
+```
+
+# Publishing to NPM
+> Run this command from the branch you want to make changes to, and 
+
+```
+yarn publish
 ```
 
