@@ -32,6 +32,8 @@ module.exports = { // eslint-disable-line no-undef
     // Validate closing bracket location in JSX
     // This rule checks all JSX multiline elements and verifies the location of the closing bracket.
     'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
+    'react/jsx-first-prop-new-line': [1, 'multiline-multiprop'],
+    'react/jsx-max-props-per-line': [1, { "maximum": 1, "when": 'multiline' }],
     'react/jsx-no-undef': 'error',
     'react/jsx-uses-vars': 'warn',
     'react/no-array-index-key': 'warn',
