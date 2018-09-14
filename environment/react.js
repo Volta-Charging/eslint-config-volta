@@ -35,6 +35,7 @@ module.exports = { // eslint-disable-line no-undef
     'react/jsx-first-prop-new-line': [1, 'multiline-multiprop'],
     'react/jsx-max-props-per-line': [1, { "maximum": 1, "when": 'always' }],
     'react/jsx-no-undef': 'error',
+    'react/jsx-sort-props': 1,
     'react/jsx-uses-vars': 'warn',
     'react/no-array-index-key': 'warn',
     'react/no-danger': 'warn',
