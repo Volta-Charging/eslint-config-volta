@@ -46,7 +46,7 @@ cp node_modules/eslint-config-volta/.editorconfig .
 ```
 
 # Publishing to NPM
-> Run this command from the master branch when there are new updates. 
+> Run this command from the branch you want to make changes to, and 
 
 ```
 yarn publish
