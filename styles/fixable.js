@@ -2,6 +2,7 @@
 // All of these rules will be warnings so its a light nudge in the right direction
 module.exports = { // eslint-disable-line no-undef
   rules: {
+    'array-bracket-spacing': ['error', 'never'],
     'comma-dangle': [
       'warn',
       {
@@ -12,6 +13,7 @@ module.exports = { // eslint-disable-line no-undef
         objects: 'always-multiline',
       },
     ],
+    'computed-property-spacing': ['error', 'never'],
     'eol-last': ['error', 'always'],
     'function-paren-newline': ['error', { minItems: 3 }],
     'import/no-useless-path-segments': 'warn',
@@ -59,6 +61,7 @@ module.exports = { // eslint-disable-line no-undef
       maxEOF: 1,
     }],
     'no-trailing-spaces': 'warn',
+    'object-curly-spacing': ['error', 'always'],
     'object-property-newline': 'error',
     'one-var-declaration-per-line': 'warn',
     'prefer-const': 'warn',

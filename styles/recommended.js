@@ -18,5 +18,6 @@ module.exports = { // eslint-disable-line no-undef
     'no-console': 'warn', // If a console.log is being used in code for good reason in production, it should be calling an api for warning or error reporting like Sentry or Dashbird
     'no-undef': 'error',
     'sort-keys': 'warn',
+    'sort-vars': 'warn',
   },
 }
