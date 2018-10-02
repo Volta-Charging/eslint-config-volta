@@ -2,7 +2,7 @@
 // All of these rules will be warnings so its a light nudge in the right direction
 module.exports = { // eslint-disable-line no-undef
   rules: {
-    'array-bracket-spacing': ['error', 'never'],
+    'array-bracket-spacing': ['warn', 'never'],
     'comma-dangle': [
       'warn',
       {
@@ -13,9 +13,9 @@ module.exports = { // eslint-disable-line no-undef
         objects: 'always-multiline',
       },
     ],
-    'computed-property-spacing': ['error', 'never'],
-    'eol-last': ['error', 'always'],
-    'function-paren-newline': ['error', { minItems: 3 }],
+    'computed-property-spacing': ['warn', 'never'],
+    'eol-last': ['warn', 'always'],
+    'function-paren-newline': ['warn', { minItems: 3 }],
     'import/no-useless-path-segments': 'warn',
     'import/order': [
       'warn', {
@@ -55,14 +55,14 @@ module.exports = { // eslint-disable-line no-undef
         returnAssign: false,
       },
     ],
-    'no-multiple-empty-lines': ['error', {
+    'no-multiple-empty-lines': ['warn', {
       max: 1,
       maxBOF: 0,
       maxEOF: 1,
     }],
     'no-trailing-spaces': 'warn',
-    'object-curly-spacing': ['error', 'always'],
-    'object-property-newline': 'error',
+    'object-curly-spacing': ['warn', 'always'],
+    'object-property-newline': 'warn',
     'one-var-declaration-per-line': 'warn',
     'prefer-const': 'warn',
     'prefer-numeric-literals': 'warn',
