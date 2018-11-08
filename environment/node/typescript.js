@@ -1,7 +1,7 @@
 'use strict'
 // coding style for Node modules using typescript.
 module.exports = { // eslint-disable-line no-undef
-  extends: './index',
+  extends: './index.js',
   parser: 'typescript-eslint-parser',
   parserOptions: {
     ecmaVersion: 6,
