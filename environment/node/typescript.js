@@ -7,5 +7,12 @@ module.exports = { // eslint-disable-line no-undef
     ecmaVersion: 6,
     sourceType: 'module',
   },
-  settings: { 'import/resolver': { node: { extensions: [ '.ts' ] } } },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: [ '.js',
+          '.ts' ],
+      },
+    },
+  },
 }

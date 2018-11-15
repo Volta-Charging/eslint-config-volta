@@ -19,7 +19,7 @@ module.exports = {
     'eol-last': [ 'warn', 'always' ],
     'function-paren-newline': [ 'warn', { minItems: 3 }],
     'import/no-useless-path-segments': 'warn',
-    'import/order': [ 'warn', { 'newlines-between': 'always' }],
+    'import/order': [ 'error', { 'newlines-between': 'always-and-inside-groups' }],
     // Arguably the most hotly debated rule
     indent: [
       'warn',
