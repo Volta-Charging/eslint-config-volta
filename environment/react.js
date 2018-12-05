@@ -6,6 +6,7 @@ module.exports = { // eslint-disable-line no-undef
     es6: true,
     node: true,
   },
+  extends: '../index.js',
   parserOptions: {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 2018,
