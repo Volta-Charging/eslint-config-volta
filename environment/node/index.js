@@ -5,4 +5,5 @@ module.exports = { // eslint-disable-line no-undef
   extends: '../../index.js',
   globals: { Promise: true },
   parser: 'babel-eslint',
+  rules: { 'no-console': 'off' },
 }
