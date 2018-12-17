@@ -1,14 +1,12 @@
 'use strict'
 module.exports = { // eslint-disable-line no-undef
   extends: [
-    'plugin:flowtype/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
     './fixable.js',
   ],
   parser: 'babel-eslint',
-  plugins: [ 'flowtype',
-    'import' ],
+  plugins: [ 'import' ],
   rules: {
     'consistent-this': [ 'warn', 'self' ],
     'linebreak-style': [ 'error', 'unix' ],
