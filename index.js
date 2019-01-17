@@ -2,7 +2,7 @@
 module.exports = { // eslint-disable-line no-undef
   extends: [ './src/recommended.js' ],
   overrides: [{
-    files: [ '**/*.ts' ],
+    files: ['**/*.ts', '**/*.tsx'],
     parser: 'typescript-eslint-parser',
     parserOptions: {
       ecmaVersion: 6,
@@ -13,7 +13,7 @@ module.exports = { // eslint-disable-line no-undef
       'import/resolver': {
         node: {
           extensions: [ '.js',
-            '.ts' ],
+            '.ts', '.tsx'],
         },
       },
     },
