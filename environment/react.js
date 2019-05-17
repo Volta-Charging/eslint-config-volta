@@ -4,13 +4,13 @@ module.exports = { // eslint-disable-line no-undef
   env: {
     browser: true,
     es6: true,
-    node: true,
+    node: true
   },
   extends: '../index.js',
   parserOptions: {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: [ 'react' ],
   rules: {
@@ -22,9 +22,9 @@ module.exports = { // eslint-disable-line no-undef
       {
         overrides: {
           ':': 'ignore',
-          '?': 'ignore',
-        },
-      },
+          '?': 'ignore'
+        }
+      }
     ],
     // Validate closing bracket location in JSX
     // This rule checks all JSX multiline elements and verifies the location of the closing bracket.
@@ -32,7 +32,7 @@ module.exports = { // eslint-disable-line no-undef
     'react/jsx-first-prop-new-line': [ 1, 'multiline-multiprop' ],
     'react/jsx-max-props-per-line': [ 1, {
       maximum: 1,
-      when: 'always',
+      when: 'always'
     }],
     'react/jsx-no-undef': 'error',
     'react/jsx-sort-props': 1,
@@ -50,12 +50,12 @@ module.exports = { // eslint-disable-line no-undef
       {
         customValidators: [],
         // Enabled after discussion in #21
-        skipShapeProps: true,
+        skipShapeProps: true
       }],
     'react/no-unused-state': 'warn',
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': [ 'error', 'always' ],
     'react/prefer-stateless-function': 'warn',
-    'react/require-default-props': 'error',
-  },
+    'react/require-default-props': 'error'
+  }
 }

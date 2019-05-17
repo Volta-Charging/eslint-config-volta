@@ -6,17 +6,17 @@ module.exports = { // eslint-disable-line no-undef
     parser: 'typescript-eslint-parser',
     parserOptions: {
       ecmaVersion: 6,
-      sourceType: 'module',
+      sourceType: 'module'
     },
     rules: { 'no-undef': 'off' },
     settings: {
       'import/resolver': {
         node: {
           extensions: [ '.js',
-            '.ts' ],
-        },
-      },
-    },
+            '.ts' ]
+        }
+      }
+    }
   }],
-  plugins: [ 'import' ],
+  plugins: [ 'import' ]
 }
