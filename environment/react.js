@@ -4,6 +4,8 @@ module.exports = { // eslint-disable-line no-undef
   env: {
     browser: true,
     es6: true,
+    jasmine: true,
+    jest: true,
     node: true,
   },
   extends: '../index.js',
