@@ -12,8 +12,7 @@ module.exports = { // eslint-disable-line no-undef
     settings: {
       'import/resolver': {
         node: {
-          extensions: [ '.js',
-            '.ts', '.tsx'],
+          extensions: [ '.js', '.ts', '.tsx'],
         },
       },
     },
