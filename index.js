@@ -2,8 +2,8 @@
 module.exports = { // eslint-disable-line no-undef
   extends: [ './src/recommended.js' ],
   overrides: [{
-    files: ['**/*.ts', '**/*.tsx'],
-    parser: 'typescript-eslint-parser',
+    files: [ '**/*.ts', '**/*.tsx' ],
+    parser: '@typescript-eslint/parser',
     parserOptions: {
       ecmaVersion: 6,
       sourceType: 'module',
@@ -12,8 +12,10 @@ module.exports = { // eslint-disable-line no-undef
     settings: {
       'import/resolver': {
         node: {
-          extensions: [ '.js',
-            '.ts', '.tsx'],
+          extensions: [
+            '.js',
+            '.ts', '.tsx',
+          ],
         },
       },
     },
