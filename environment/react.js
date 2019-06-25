@@ -4,15 +4,21 @@ module.exports = { // eslint-disable-line no-undef
   env: {
     browser: true,
     es6: true,
+    jasmine: true,
+    jest: true,
     node: true,
   },
   extends: '../index.js',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: [ 'react' ],
+  plugins: [
+    'jsx-a11y', 'import', 'react',
+  ],
+
   rules: {
     'no-unused-vars': [ 'warn',
       { varsIgnorePattern: 'React' }],
@@ -57,5 +63,13 @@ module.exports = { // eslint-disable-line no-undef
     'react/prefer-es6-class': [ 'error', 'always' ],
     'react/prefer-stateless-function': 'warn',
     'react/require-default-props': 'error',
+  },
+  settings: {
+    'import/parsers': { '@typescript-eslint/parser': [ '.ts', '.tsx' ] },
+    'import/resolver': {
+      'babel-module': {},
+      typescript: {},
+    },
+    react: { version: 'detect' },
   },
 }
