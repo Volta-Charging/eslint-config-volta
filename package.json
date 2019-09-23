@@ -3,7 +3,7 @@
   "version": "0.2.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Volta-Charging/lint-config.git"
+    "url": "https://github.com/Volta-Charging/eslint-config-volta.git"
   },
   "dependencies": {
     "@typescript-eslint/parser": "^2.3.0",
