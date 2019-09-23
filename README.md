@@ -31,7 +31,26 @@ Add precommit hooks to `package.json`:
 }
 ```
 
+# Explicit Rules and Reasoning
+
+`'array-bracket-newline': [ 'warn', { multiline: true }],`
+
+Error when an array has multiple items but is not formatted to be on muiltiple lines. Consistency wins readability.
+
+`'comma-dangle': [ 'warn', 'only-multiline' ],`
+
+Warn when you have a dangling comma on a non-multiline entity. Avoid syntax before-the-fact.
+
+`'function-paren-newline': [ 'error', 'consistent' ],`
+
+This rule errors when there are inconsistent newlines around function parentheses. Consistency wins readability.
+
+`'max-params': [ 'warn', { max: 4 }],`
+
+Warn when function argument list count reaches 4. Keep contracts down in complexity  and for flexibility use named/typed object contracts.
+
 # Testing New Linting Rules
+
 How do I know that the new eslint-config-volta will work good? Glad you asked partner! With our handy dandy `yarn link` testing's a doozy. Let me show yall:
 1. Run the following under your local version of `eslint-config-volta` with the branch you want to test:
 ```sh

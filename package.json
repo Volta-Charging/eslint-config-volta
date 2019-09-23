@@ -1,9 +1,9 @@
 {
   "name": "@volta/eslint-config-volta",
-  "version": "0.2.3",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Volta-Charging/lint-config.git"
+    "url": "https://github.com/Volta-Charging/eslint-config-volta.git"
   },
   "dependencies": {
     "@typescript-eslint/parser": "^1.11.0",
@@ -17,6 +17,9 @@
   "devDependencies": {
     "husky": "^0.14.3",
     "lint-staged": "^7.0.0"
+  },
+  "resolutions": {
+    "eslint": "~6.4.0"
   },
   "keywords": [
     "style guide",
