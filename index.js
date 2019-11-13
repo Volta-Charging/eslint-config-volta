@@ -23,7 +23,7 @@ module.exports = { // eslint-disable-line no-undef
     'computed-property-spacing': [ 'warn', 'never' ],
     'consistent-this': [ 'warn', 'self' ],
     'eol-last': [ 'warn', 'always' ],
-    'function-paren-newline': [ 'warn', 'consistent' ],
+    'function-paren-newline': [ 'error', 'consistent' ],
     'import/no-useless-path-segments': 'warn',
     'import/order': [ 'error', { 'newlines-between': 'always-and-inside-groups' }],
     indent: [ 'warn', 2, { SwitchCase: 1 }],
