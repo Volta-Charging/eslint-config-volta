@@ -14,8 +14,10 @@ module.exports = { // eslint-disable-line no-undef
   },
   plugins: [ 'react' ],
   rules: {
-    'no-unused-vars': [ 'warn',
-      { varsIgnorePattern: 'React' }],
+    'no-unused-vars': [
+      'warn',
+      { varsIgnorePattern: 'React' }
+    ],
     'operator-linebreak': [
       'error',
       'after',
@@ -30,10 +32,12 @@ module.exports = { // eslint-disable-line no-undef
     // This rule checks all JSX multiline elements and verifies the location of the closing bracket.
     'react/jsx-closing-bracket-location': [ 'warn', 'line-aligned' ],
     'react/jsx-first-prop-new-line': [ 1, 'multiline-multiprop' ],
-    'react/jsx-max-props-per-line': [ 1, {
-      maximum: 1,
-      when: 'always',
-    }],
+    'react/jsx-max-props-per-line': [
+      1, {
+        maximum: 1,
+        when: 'always',
+      }
+    ],
     'react/jsx-no-undef': 'error',
     'react/jsx-sort-props': 1,
     'react/jsx-uses-vars': 'warn',
@@ -46,12 +50,14 @@ module.exports = { // eslint-disable-line no-undef
     'react/no-redundant-should-component-update': 'warn',
     'react/no-render-return-value': 'error',
     'react/no-typos': 'warn',
-    'react/no-unused-prop-types': [ 'error',
+    'react/no-unused-prop-types': [
+      'error',
       {
         customValidators: [],
         // Enabled after discussion in #21
         skipShapeProps: true,
-      }],
+      }
+    ],
     'react/no-unused-state': 'warn',
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': [ 'error', 'always' ],
