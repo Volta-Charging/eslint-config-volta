@@ -4,5 +4,8 @@ module.exports = { // eslint-disable-line no-undef
   env: { node: true },
   extends: '../index.js',
   globals: { Promise: true },
-  rules: { 'no-console': 'off' },
+  rules: {
+    'no-console': 'off',
+    'no-undef': 'off',
+  },
 }
