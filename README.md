@@ -20,7 +20,7 @@ Add precommit hooks to `package.json`:
 {
   "scripts": {
     "precommit": "lint-staged",
-    "lint": "eslint --fix src"
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --fix --quiet"
   },
   "lint-staged": {
     "*.js": [
