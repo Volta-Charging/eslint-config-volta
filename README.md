@@ -45,10 +45,6 @@ Warn when you have a dangling comma on a non-multiline entity. Avoid syntax befo
 
 This rule errors when there are inconsistent newlines around function parentheses. Consistency wins readability.
 
-`'max-params': [ 'warn', { max: 4 }],`
-
-Warn when function argument list count reaches 4. Keep contracts down in complexity  and for flexibility use named/typed object contracts.
-
 # Testing New Linting Rules
 
 How do I know that the new eslint-config-volta will work good? Glad you asked partner! With our handy dandy `yarn link` testing's a doozy. Let me show yall:
