@@ -6,13 +6,13 @@
     "url": "https://github.com/Volta-Charging/eslint-config-volta.git"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^2.3.0",
+    "@typescript-eslint/parser": "^3.10.1",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-native": "^3.7.0"
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-native": "^3.9.0"
   },
   "devDependencies": {
     "husky": "^3.0.5",

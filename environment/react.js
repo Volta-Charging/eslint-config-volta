@@ -7,6 +7,14 @@ module.exports = { // eslint-disable-line no-undef
     node: true,
   },
   extends: '../index.js',
+  overrides: [
+    {
+      files: [ '*.ts', '*.tsx' ],
+      rules: {
+        '@typescript-eslint/no-unused-vars': [ 2, { args: 'none' }]
+      }
+    }
+  ],
   parserOptions: {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 2018,
