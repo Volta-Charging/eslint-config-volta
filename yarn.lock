@@ -255,6 +255,18 @@
   resolved "https://registry.npmjs.org/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
 
+"@typescript-eslint/eslint-plugin@^3.10.1":
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-3.10.1.tgz#7e061338a1383f59edc204c605899f93dc2e2c8f"
+  integrity sha512-PQg0emRtzZFWq6PxBcdxRH3QIQiyFO3WCVpRL3fgj5oQS3CDs3AeAKfv4DxNhzn8ITdNJGJ4D3Qw8eAJf3lXeQ==
+  dependencies:
+    "@typescript-eslint/experimental-utils" "3.10.1"
+    debug "^4.1.1"
+    functional-red-black-tree "^1.0.1"
+    regexpp "^3.0.0"
+    semver "^7.3.2"
+    tsutils "^3.17.1"
+
 "@typescript-eslint/experimental-utils@3.10.1":
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-3.10.1.tgz#e179ffc81a80ebcae2ea04e0332f8b251345a686"
@@ -2172,6 +2184,11 @@ regexpp@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/regexpp/-/regexpp-2.0.1.tgz#8d19d31cf632482b589049f8281f93dbcba4d07f"
   integrity sha512-lv0M6+TkDVniA3aD1Eg0DVpfU/booSu7Eev3TDO/mZKHBfVjgCGTV4t4buppESEYDtkArYFOxTJWv6S5C+iaNw==
+
+regexpp@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-3.1.0.tgz#206d0ad0a5648cffbdb8ae46438f3dc51c9f78e2"
+  integrity sha512-ZOIzd8yVsQQA7j8GCSlPGXwg5PfmA1mrq0JP4nGhh54LaKN3xdai/vHUDu74pKwV8OxseMS65u2NImosQcSD0Q==
 
 resolve-from@^3.0.0:
   version "3.0.0"
