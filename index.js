@@ -26,9 +26,13 @@ module.exports = { // eslint-disable-line no-undef
     'computed-property-spacing': [ 'warn', 'never' ],
     'consistent-this': [ 'warn', 'self' ],
     'eol-last': [ 'warn', 'always' ],
-    'function-paren-newline': [ 'error', 'consistent' ],
+    'function-paren-newline': ['error', { 'minItems': 4 }],
+    'generator-star-spacing': ['error', { 'before': false, 'after': true }],
     'import/no-useless-path-segments': 'warn',
-    'import/order': [ 'error', { 'newlines-between': 'always-and-inside-groups' }],
+    'import/order': ['warn', {
+      'newlines-between': 'always',
+      'groups': [['builtin', 'internal', 'external'], 'parent', 'sibling', 'index'],
+    }],
     indent: [ 'warn', 2, { SwitchCase: 1 }],
     'keyword-spacing': [
       'warn', { after: true,
@@ -37,7 +41,7 @@ module.exports = { // eslint-disable-line no-undef
     'linebreak-style': [ 'error', 'unix' ],
     'lines-between-class-members': [ 'warn', 'always', { exceptAfterSingleLine: true }],
     'max-nested-callbacks': [ 'warn', 3 ],
-    'max-params': [ 'warn', { max: 4 }],
+    'max-params': 'off',
     'newline-per-chained-call': [ 'error', { ignoreChainWithDepth: 2 }],
     'no-console': 'warn', // If a console.log is being used in code for good reason in production, it should be calling an api for warning or error reporting like Sentry or Dashbird
     'no-extra-parens': [
@@ -52,9 +56,16 @@ module.exports = { // eslint-disable-line no-undef
     ],
     'no-trailing-spaces': 'warn',
     'no-undef': 'warn',
-    'object-curly-newline': [ 'warn', { consistent: true }],
+    'object-curly-newline': [
+      'warn', {
+        'ObjectExpression': { 'multiline': true, 'minProperties': 3 },
+        'ObjectPattern': { 'multiline': true, 'minProperties': 3 },
+        'ImportDeclaration': { 'multiline': true },
+        'ExportDeclaration': { 'multiline': true, 'minProperties': 3 }
+      },
+    ],
     'object-curly-spacing': [ 'warn', 'always' ],
-    'object-property-newline': 'warn',
+    'object-property-newline': ['warn', { 'allowAllPropertiesOnSameLine': true }],
     'one-var-declaration-per-line': 'warn',
     'prefer-const': 'warn',
     'prefer-numeric-literals': 'warn',

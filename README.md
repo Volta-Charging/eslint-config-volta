@@ -20,7 +20,7 @@ Add precommit hooks to `package.json`:
 {
   "scripts": {
     "precommit": "lint-staged",
-    "lint": "eslint --fix src"
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --fix --quiet"
   },
   "lint-staged": {
     "*.js": [
@@ -44,10 +44,6 @@ Warn when you have a dangling comma on a non-multiline entity. Avoid syntax befo
 `'function-paren-newline': [ 'error', 'consistent' ],`
 
 This rule errors when there are inconsistent newlines around function parentheses. Consistency wins readability.
-
-`'max-params': [ 'warn', { max: 4 }],`
-
-Warn when function argument list count reaches 4. Keep contracts down in complexity  and for flexibility use named/typed object contracts.
 
 # Testing New Linting Rules
 
