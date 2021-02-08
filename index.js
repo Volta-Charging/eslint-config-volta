@@ -15,7 +15,10 @@ module.exports = { // eslint-disable-line no-undef
     ecmaVersion: 6,
     sourceType: 'module',
   },
-  plugins: [ 'import' ],
+  plugins: [
+    'import',
+    '@typescript-eslint'
+  ],
   rules: {
     'array-bracket-newline': [ 'warn', { multiline: true }],
     'array-bracket-spacing': [ 'warn', 'always', { objectsInArrays: false }],
